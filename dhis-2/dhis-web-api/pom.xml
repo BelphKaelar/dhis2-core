@@ -405,6 +405,10 @@
       <artifactId>poi</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.hisp.dhis</groupId>
+      <artifactId>dhis-service-employee</artifactId>
+    </dependency>
   </dependencies>
 
   <build>

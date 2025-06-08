@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.hisp.dhis.employee.Employee" table="employee">
+        <id name="employeeId" type="long" column="employeeid">
+            <generator class="identity"/>
+        </id>
+
+        <property name="employeeNumber" column="employee_number" type="string"/>
+        <property name="firstName" column="firstname" type="string"/>
+        <property name="lastName" column="lastname" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="phoneNumber" column="phonenumber" type="string"/>
+        <property name="department" column="department" type="string"/>
+        <property name="position" column="position" type="string"/>
+
+        <property name="uid" column="uid" type="string" not-null="true" unique="true"/>
+        <property name="code" column="code" type="string" unique="true"/>
+        <property name="created" column="created" type="timestamp"/>
+        <property name="lastUpdated" column="lastupdated" type="timestamp"/>
+        <property name="name" column="name" type="string" not-null="true"/>
+    </class>
+</hibernate-mapping> 
