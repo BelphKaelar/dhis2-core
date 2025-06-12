@@ -1,4 +1,4 @@
-package org.hisp.dhis.employee.config;
+package dhis.employee.config;
 
 import org.hisp.dhis.schema.descriptors.EmployeeSchemaDescriptor;
 import org.springframework.context.annotation.Bean;
